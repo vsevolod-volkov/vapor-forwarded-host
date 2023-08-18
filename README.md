@@ -42,7 +42,7 @@ app.get("source-page") { req in
 ``` swift
 app.get("source-page") { req in
    return """
-      URL: \(req.forfardedURL(with: req.url))
+      URL: \(req.forfardedURL(from: req.url))
       """
 }
 ```

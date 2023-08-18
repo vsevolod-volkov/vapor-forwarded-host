@@ -45,7 +45,7 @@ extension Request {
         return components.url ?? url
     }
     
-    public func forwardedURI(from uri: URI) -> URI {
+    public func forwardedURL(from uri: URI) -> URI {
         var uri = uri
         
         uri.scheme = self.forwardedProto
